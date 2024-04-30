@@ -1,0 +1,132 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/liblsl-x64-windows-1.16.2-b63631f0-d517-4d0b-8c2a-84215d6f689a",
+  "name": "liblsl:x64-windows@1.16.2 e182cbbeb868d3a381a749073a28e9def39a9c7ae8bb36dccfd353175e7b07a9",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
+    ],
+    "created": "2024-03-24T06:14:40Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "liblsl",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "1.16.2",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/liblsl",
+      "homepage": "https://github.com/sccn/liblsl",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "C++ lsl library for multi-modal time-synched data transmission over the local network",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "liblsl:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "e182cbbeb868d3a381a749073a28e9def39a9c7ae8bb36dccfd353175e7b07a9",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "sccn/liblsl",
+      "downloadLocation": "git+https://github.com/sccn/liblsl@v1.16.2",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "141f364034a7156caf9ffafbb2f43cc9a932116a3ef1c1b76822649996d6b99b3017b18d91d9c25a9cd718419c5c3b037fa97b2845540bda195f55dd9de27ab1"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/src/vcpkg/ports/liblsl/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "113cc4eef1bf3e09bc318cb6170e1edb5d8a1ea42c030c165ce82665631f82a2"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/src/vcpkg/ports/liblsl/use-find-package-asio.patch",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7db71105d77380bf509a27999b0d5d8dd1f6079b56a2119be32048d74eecf3c2"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/src/vcpkg/ports/liblsl/vcpkg.json",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d2def5abfac8333e379d61d051df033dd86820ab0580515ed0740e7e611c3ed6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}
